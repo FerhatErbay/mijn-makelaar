@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="bg-white h-40 border-b-2">
-      <div className="bg-white h-12 border-b-2"></div>
-      <div className="flex justify-between items-center h-28 mx-auto p-3 max-w-6xl">
+    <header className="bg-white h-36 border-b">
+      <div className="bg-white h-12 border-b"></div>
+      <div className="flex justify-between items-center h-24 mx-auto p-3 max-w-6xl">
         <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-          <span className="text-orange-400 ">bdl</span>
-          <span className="text-orange-600">Makelaar</span>
+          <span className="text-orange-600 ">BDL</span>
+          <span className="text-orange-400">makelaar</span>
         </h1>
         <form className="bg-stone-100  rounded-lg p-0 border  flex items-center">
           <input
@@ -25,9 +25,9 @@ export default function Header() {
               Home
             </li>
           </Link>
-          <Link to="/over-mij">
+          <Link to="/over-ons">
             <li className="hidden sm:inline text-stone-600 hover:underline">
-              Over mij
+              Over Ons
             </li>
           </Link>
           <Link to="/sign-in">
