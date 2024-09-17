@@ -68,7 +68,7 @@ export default function SignUp() {
             Wachtwoord
           </label>
           <input
-            type="text"
+            type="password"
             className="border p-3 rounded-md w-full outline-orange-500"
             id="wachtwoord"
             onChange={handleChange}
