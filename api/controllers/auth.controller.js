@@ -35,7 +35,7 @@ export const signin = async (req, res, next) => {
       { id: geldigeGebruiker._id },
       process.env.JWT_SECRET
     );
-    const { wachtwoord: pass, ...rest } = geldigeGebruiker._doc;
+    const { wachtwoord: wacht, ...rest } = geldigeGebruiker._doc;
     res.cookie("token", token, { httpOnly: true }).status(200).json(rest);
   } catch (error) {
     next(error);
